@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+@font-face {
+  font-family: "Vanguard CF";
+  src: url("../fonts/vanguard-cf/vanguardcf-demibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Vanguard CF";
+  src: url("../fonts/vanguard-cf/vanguardcf-extrabold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Fonts */
+  --font-display: "Vanguard CF", sans-serif;
+  --font-body: "Manrope", sans-serif;
+
+  /* Color */
+  --color-primary-white: #f8f8f8;
+  --color-primary-black: #171718;
+  --color-secondary-white: #848484;
+  --project-gs: #feb151;
+  --project-aws: #232f3e;
+  --project-bc: #1f3a2e;
+  --project-crs: #e29578;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-28: 112px;
+  --space-32: 128px;
+
+  /* Text */
+  --text-2xs: 8px;
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 16px; /* Standard default body text */
+  --text-lg: 18px;
+  --text-xl: 20px;
+
+  /* Subheadings & Headings */
+  --text-2xl: 24px;
+  --text-3xl: 30px;
+  --text-4xl: 36px;
+  --text-5xl: 48px;
+
+  /* Display & Hero Typography */
+  --text-6xl: 60px;
+  --text-7xl: 72px;
+  --text-8xl: 96px;
+  --text-9xl: 128px;
+
+  --text-fluid-hero: clamp(4.5rem, 15vw, 8rem);
+  /* Layout */
+  --radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: var(--color-primary-white);
+  font-family: var(--font-body);
+  color: var(--color-primary-black);
+}
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  margin: 0;
+}
