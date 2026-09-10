@@ -1,16 +1,20 @@
 /* * Header */
-.header__location,
-#header-clock,
+.header__details,
 .header__link {
   color: var(--color-primary-black);
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 800;
 }
 
-@media screen and (min-width: 0px) {
-  .header__ {
+.header__link:focus-visible {
+  display: none;
+}
+
+@media screen {
+  .header {
     width: 100%;
+    padding-top: var(--space-4);
   }
 
   .header,
@@ -34,5 +38,26 @@
 
   .header__nav {
     gap: var(--space-4);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .header {
+    padding-top: var(--space-8);
+  }
+
+  .header__location,
+  #header-clock,
+  .header__link {
+    font-size: var(--text-md);
+  }
+
+  .header__details {
+    display: flex;
+    gap: var(--space-4);
+  }
+
+  #header-clock {
+    display: inline;
   }
 }

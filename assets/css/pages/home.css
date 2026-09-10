@@ -8,6 +8,7 @@
 
 .footer {
   flex-grow: 1;
+  padding-bottom: var(--space-4);
 }
 
 @media screen {
@@ -137,6 +138,7 @@
     font-size: var(--text-fluid-hero__desktop);
     white-space: nowrap;
     display: inline-block;
+    line-height: 100%;
   }
 }
 
@@ -165,12 +167,6 @@
     gap: var(--space-4);
     align-items: end;
   }
-
-  /* .hero__profile {
-    display: flex;
-    gap: var(--space-4);
-    align-items: end;
-  } */
 
   .hero__list--center > .hero__list-item {
     font-size: var(--text-lg);
