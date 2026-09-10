@@ -6,6 +6,18 @@
 
 @media screen and (min-width: 600px) {
   body {
+    padding: 0 var(--space-8);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
     padding: 0 var(--space-12);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    padding: 0 var(--space-16);
   }
 }
