@@ -81,6 +81,9 @@ html {
   overflow-x: hidden;
 }
 body {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
   background-color: var(--color-primary-white);
   font-family: var(--font-body);
   color: var(--color-primary-black);

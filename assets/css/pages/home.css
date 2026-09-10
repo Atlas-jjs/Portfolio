@@ -1,13 +1,16 @@
 .hero {
   width: 100%;
+  margin: auto 0;
 }
 
 .main {
-  min-height: 90dvh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .footer {
-  flex-grow: 1;
   padding-bottom: var(--space-4);
 }
 
@@ -123,13 +126,22 @@
   .footer__cta-title {
     font-weight: 400;
   }
+}
 
-  .footer__maxim {
-    display: none;
+@media screen and (min-width: 400px) {
+  .hero__list > .hero__list-item {
+    font-size: var(--text-sm);
+    list-style-type: none;
   }
 }
 
 @media screen and (min-width: 600px) {
+  .footer {
+    padding-bottom: var(--space-8);
+  }
+}
+
+@media screen and (min-width: 768px) {
   .hero__mobile-name {
     display: none;
   }
@@ -141,18 +153,13 @@
     display: inline-block;
     line-height: 100%;
     white-space: nowrap;
-    /* background-color: red; */
   }
-}
 
-@media screen and (min-width: 768px) {
   /* * Hero Center  */
   .hero__center {
     display: flex;
-    flex-direction: row;
-    align-items: end;
+    align-items: center;
     gap: var(--space-4);
-    justify-content: center;
   }
 
   .hero__content {
@@ -171,8 +178,12 @@
     align-items: end;
   }
 
+  .hero__image {
+    max-width: 300px;
+  }
+
   .hero__list--center > .hero__list-item {
-    font-size: var(--text-lg);
+    font-size: var(--text-xs);
   }
 
   /* * Latest Project */
@@ -190,20 +201,9 @@
     font-size: var(--text-4xl);
   }
 
-  .hero__maxim {
-    display: none;
-  }
-
   /* * Footer */
   .footer {
     align-items: center;
-  }
-
-  .footer__maxim {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: var(--text-sm);
   }
 }
 
@@ -224,22 +224,17 @@
     font-size: var(--text-lg);
   }
 
-  .footer__maxim {
-    font-size: var(--text-base);
-  }
-
   .footer__cta .footer__cta-title,
   .footer__cta-email {
     font-size: var(--text-sm);
   }
+
+  .hero__image {
+    max-width: 400px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-  .hero__image {
-    width: 100%;
-    max-width: 500px;
-  }
-
   .hero__link {
     font-size: var(--text-6xl);
   }
