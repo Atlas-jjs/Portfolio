@@ -2,7 +2,7 @@
   width: 100%;
 }
 
-@media screen and (min-width: 320px) {
+@media screen {
   /* * Hero Name */
   .hero__desktop-name {
     display: none;
@@ -44,8 +44,13 @@
     align-items: center;
   }
 
+  .hero__skills {
+    display: none;
+  }
+
   .hero__image {
-    max-width: 80%;
+    width: 80%;
+    max-width: 400px;
     height: auto;
     object-fit: cover;
   }
@@ -74,10 +79,18 @@
     font-weight: 800;
   }
 
-  .hero__maxim {
-    padding: var(--space-16) 0;
+  /* ? Picture and Latest Project */
+  .hero__media {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 
+  .hero__maxim {
+    padding: var(--space-8) 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
   }
 
   /* * Footer */
@@ -99,6 +112,10 @@
   .footer__cta-title {
     font-weight: 400;
   }
+
+  .footer__maxim {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -112,5 +129,73 @@
     font-size: var(--text-fluid-hero__desktop);
     white-space: nowrap;
     display: inline-block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* * Hero Center  */
+  .hero__center {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: var(--space-4);
+    justify-content: center;
+  }
+
+  .hero__content {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+  }
+
+  .hero__skills {
+    display: inline;
+  }
+
+  .hero__media {
+    flex-direction: row;
+    gap: var(--space-4);
+    align-items: end;
+  }
+
+  /* .hero__profile {
+    display: flex;
+    gap: var(--space-4);
+    align-items: end;
+  } */
+
+  .hero__list--center > .hero__list-item {
+    font-size: var(--text-lg);
+  }
+
+  /* * Latest Project */
+  .hero__latest-project {
+    width: fit-content;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .hero__subtitle {
+    font-size: var(--text-base);
+  }
+
+  .hero__link {
+    font-size: var(--text-4xl);
+  }
+
+  .hero__maxim {
+    display: none;
+  }
+
+  /* * Footer */
+  .footer {
+    align-items: center;
+  }
+
+  .footer__maxim {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: var(--text-sm);
   }
 }
