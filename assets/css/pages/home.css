@@ -2,6 +2,14 @@
   width: 100%;
 }
 
+.main {
+  min-height: 90dvh;
+}
+
+.footer {
+  flex-grow: 1;
+}
+
 @media screen {
   /* * Hero Name */
   .hero__desktop-name {
