@@ -1,5 +1,11 @@
-@media screen and (min-width: 0px) {
+@media screen {
   body {
-    padding: var(--space-4);
+    padding: 0 var(--space-4);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    padding: 0 var(--space-12);
   }
 }
