@@ -64,7 +64,8 @@
   --text-8xl: 96px;
   --text-9xl: 128px;
 
-  --text-fluid-hero: clamp(4.5rem, 15vw, 8rem);
+  --text-fluid-hero__mobile: clamp(4.5rem, 15vw, 8rem);
+  --text-fluid-hero__desktop: clamp(4.5rem, 13vw, 18em);
   /* Layout */
   --radius: 8px;
 }
