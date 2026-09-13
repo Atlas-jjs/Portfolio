@@ -69,6 +69,7 @@
   --text-fluid-hero__tablet: clamp(4.5rem, 11vw, 18em);
   --text-fluid-hero__desktop: clamp(4.5rem, 12.5vw, 18em);
   --text-fluid-page_title: clamp(4.5rem, 12.5vw, 12em);
+  --text-fluid-cta: clamp(4.5rem, 12.5vw, 8em);
   /* Layout */
   --radius: 8px;
 }
@@ -80,6 +81,7 @@
 }
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
   min-height: 100dvh;
