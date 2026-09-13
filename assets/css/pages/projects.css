@@ -1,0 +1,69 @@
+@media screen {
+  .project {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    text-decoration: none;
+    color: var(--color-primary-black);
+    width: fit-content;
+  }
+
+  .projects {
+    padding-top: var(--space-8);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-16);
+  }
+
+  .project:nth-child(odd) {
+    align-self: flex-end;
+  }
+
+  .project__title {
+    font-size: var(--text-2xl);
+  }
+
+  .project__thumbnail {
+    width: 100%;
+    max-width: 750px;
+  }
+
+  .project__title {
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+  }
+
+  .project__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .projects {
+    gap: var(--space-20);
+  }
+
+  .project {
+    gap: var(--space-4);
+  }
+
+  .project__title {
+    font-size: var(--text-3xl);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .projects {
+    gap: var(--space-28);
+  }
+
+  .project__title {
+    font-size: var(--text-4xl);
+  }
+
+  .project__thumbnail {
+    max-width: 1000px;
+  }
+}

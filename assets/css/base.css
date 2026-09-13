@@ -68,6 +68,7 @@
   --text-fluid-hero__mobile: clamp(4.5rem, 15vw, 8rem);
   --text-fluid-hero__tablet: clamp(4.5rem, 11vw, 18em);
   --text-fluid-hero__desktop: clamp(4.5rem, 12.5vw, 18em);
+  --text-fluid-page_title: clamp(4.5rem, 12.5vw, 12em);
   /* Layout */
   --radius: 8px;
 }
