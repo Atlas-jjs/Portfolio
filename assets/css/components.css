@@ -46,7 +46,7 @@
   }
 
   /* * Page Title */
-  .page-title {
+  .heading {
     padding-top: var(--space-6);
     font-size: var(--text-fluid-page_title);
   }
@@ -56,10 +56,10 @@
     display: flex;
     align-items: center;
     gap: var(--space-2);
-    border: 1px solid var(--color-primary-black);
     padding: var(--space-2) var(--space-2);
     width: fit-content;
     font-size: var(--text-xs);
+    border: 1px solid currentColor;
   }
 
   /* * Footer */
@@ -156,12 +156,6 @@
 
   /* * Tags */
   .tag {
-    display: flex;
-    align-items: center;
-    gap: var(--space-2);
-    border: 1px solid var(--color-primary-black);
-    padding: var(--space-2) var(--space-4);
-    width: fit-content;
     font-size: var(--text-sm);
   }
 

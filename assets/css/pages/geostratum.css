@@ -133,12 +133,55 @@
     flex-direction: column;
     gap: var(--space-8);
   }
+
+  /* * More Projects */
+  .more-projects > .heading {
+    margin-bottom: var(--space-12);
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .project {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    width: fit-content;
+    color: var(--color-primary-white);
+    text-decoration: none;
+  }
+
+  .project__title {
+    font-size: var(--text-2xl);
+  }
+
+  .project__thumbnail {
+    width: 100%;
+  }
+
+  .project__title {
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+  }
+
+  .project__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+  }
 }
 
 @media screen and (min-width: 600px) {
 }
 
 @media screen and (min-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .overview__container {
     grid-template-columns: 2fr 1fr;
     column-gap: var(--space-16);
