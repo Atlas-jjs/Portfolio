@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <!-- * CSS -->
+    <link rel="stylesheet" href="/assets/css/base.css" />
+    <link rel="stylesheet" href="/assets/css/components.css" />
+    <link rel="stylesheet" href="/assets/css/layouts/projects.css" />
+    <link rel="stylesheet" href="/assets/css/pages/geostratum.css" />
+  </head>
+  <body>
+    <!-- * Header -->
+    <header class="header">
+      <div class="header__details">
+        <span class="header__location">BENGUET, PH</span>
+        <span id="header-clock"></span>
+      </div>
+      <nav class="header__nav">
+        <a class="header__link" href="/index.html">Home</a>
+        <a class="header__link" href="/projects.html">Projects</a>
+        <a class="header__link" href="/automations.html">Automations</a>
+      </nav>
+    </header>
+    <main class="main">
+      <!-- * Hero  -->
+      <section class="hero content">
+        <div class="hero__content">
+          <div class="hero__heading">
+            <h1 class="page-title">GeoStratum</h1>
+            <div class="page-tags">
+              <div class="tag">Web Development</div>
+              <div class="tag">GIS Development</div>
+              <div class="tag">UI/UX Design</div>
+            </div>
+          </div>
+          <img
+            class="hero__thumbnail"
+            src="/assets/images/thumbnails/geostratum.png"
+            alt=""
+          />
+        </div>
+      </section>
+      <!-- * Overview  -->
+      <section class="overview content">
+        <hr class="overview__line" />
+        <div class="overview__container">
+          <div class="overview__main">
+            <h2 class="overview__heading">Overview</h2>
+            <p class="overview__description">
+              GeoStratum is an interactive web GIS profile built in
+              collaboration with Saint Louis University for the Department of
+              Environment and Natural Resources (DENR CAR). It brings together
+              land cover, land classification, biophysical conditions, hazard
+              susceptibility, and cadastral records across the region into a
+              single unified map for regional planners.
+            </p>
+
+            <button class="view-site-btn">VIEW LIVE SITE</button>
+          </div>
+
+          <div class="overview__details">
+            <div class="overview__group">
+              <h3 class="overview__subtitle">Services</h3>
+              <ol class="overview__list">
+                <li class="overview__list-item">Web Development</li>
+                <li class="overview__list-item">GIS Development</li>
+                <li class="overview__list-item">UI/UX Design</li>
+              </ol>
+            </div>
+            <div class="overview__group">
+              <h3 class="overview__subtitle">Core Features</h3>
+              <ol class="overview__list">
+                <li class="overview__list-item">Interactive Map</li>
+                <li class="overview__list-item">Spatial Analysis</li>
+                <li class="overview__list-item">Layer Toggling</li>
+              </ol>
+            </div>
+            <div class="overview__group">
+              <h3 class="overview__subtitle">Tech Stack</h3>
+              <ol class="overview__list">
+                <li class="overview__list-item">Leaflet.js</li>
+                <li class="overview__list-item">JavaScript</li>
+                <li class="overview__list-item">HTML/CSS</li>
+              </ol>
+            </div>
+            <div class="overview__group">
+              <h3 class="overview__subtitle">Completed</h3>
+              <ol class="overview__list">
+                <li class="overview__list-item">Internship</li>
+                <li class="overview__list-item">July 2026</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <video
+          class="overview__video"
+          src="/assets/videos/geostratum-showcase.mp4"
+          autoplay
+          muted
+          loop
+        ></video>
+      </section>
+      <!-- * Highlight -->
+      <section class="highlight">
+        <div class="highlight__text">
+          <h6 class="highlight__tagline tagline">Spatial Interaction</h6>
+          <h2 class="highlight__heading">Dual-source Mapping</h2>
+          <p class="highlight__description">
+            The platform harmonizes national NAMRIA and local Cadastre datasets
+            into a unified coordinate system. Planners can isolate specific
+            sub-regions and toggle environmental layers within that active
+            boundary to instantly compute localized metrics eliminating
+            region-wide visual clutter.
+          </p>
+        </div>
+        <img
+          src="/assets/images/geostratum/highlight.png"
+          alt=""
+          class="highlight__image"
+        />
+      </section>
+      <!-- * Features -->
+      <section class="features content">
+        <div class="feature right-section">
+          <div class="feature__thumbnails">
+            <img
+              src="/assets/images/geostratum/feature-1.png"
+              alt=""
+              class="feature__thumbnail"
+            />
+            <img
+              src="/assets/images/geostratum/feature-2.png"
+              alt=""
+              class="feature__thumbnail"
+            />
+          </div>
+          <div class="feature__text">
+            <h6 class="feature__tagline tagline">Spatial Analysis</h6>
+            <h2 class="feature__heading">
+              Layer Computations and Custom Imports
+            </h2>
+            <p class="feature__description">
+              Selecting a specific provincial or municipal boundary visually
+              isolates the region and triggers a localized spatial analysis. The
+              interface dynamically evaluates the selection to compute exact
+              geometric intersections for all active environmental layers
+              contained within that targeted zone.
+              <br /><br />
+              Planners can directly upload custom GeoJSON or zipped Shapefiles
+              to overlay their own external spatial data. The platform instantly
+              parses and renders these files as interactive map layers, granting
+              users full control over visual properties like opacity, color, and
+              line weight directly within the browser.
+            </p>
+          </div>
+        </div>
+        <div class="feature left-section">
+          <div class="feature__text">
+            <h6 class="feature__tagline tagline">Technical Documentation</h6>
+            <h2 class="feature__heading">System Manual</h2>
+            <p class="feature__description">
+              The platform features a comprehensive, browser-based user manual
+              detailing layer management, spatial queries, custom data imports,
+              and system limitations.
+            </p>
+          </div>
+          <div class="feature__thumbnails">
+            <img
+              src="/assets/images/geostratum/feature-3.png"
+              alt=""
+              class="feature__thumbnail"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- * Footer -->
+    <footer class="footer content dark">
+      <div class="footer__cta-container">
+        <h2 class="footer__cta">GET IN TOUCH</h2>
+        <button class="footer__cta-btn light">
+          CONTACT ME
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-chevron-right"
+          >
+            <path d="m9 18 6-6-6-6" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="footer__footnotes">
+        <span class="footer__copyright">© 2026 Jazreil Jaron Sabog</span>
+        <div class="footer__links">
+          <a class="footer__link" href="">LinkedIn</a>
+          <a class="footer__link" href="">Email</a>
+        </div>
+        <div class="footer__back-to-top">
+          <a class="footer__back-to-top-btn" href="#">Back to top</a
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-move-up"
+          >
+            <path d="M8 6L12 2L16 6" />
+            <path d="M12 2V22" />
+          </svg>
+        </div>
+      </div>
+    </footer>
+
+    <!-- * JS -->
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

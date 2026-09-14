@@ -68,7 +68,7 @@
   --text-fluid-hero__mobile: clamp(4.5rem, 15vw, 8rem);
   --text-fluid-hero__tablet: clamp(4.5rem, 11vw, 18em);
   --text-fluid-hero__desktop: clamp(4.5rem, 12.5vw, 18em);
-  --text-fluid-page_title: clamp(4.5rem, 12.5vw, 12em);
+  --text-fluid-page_title: clamp(4rem, 10vw, 12em);
   --text-fluid-cta: clamp(4.5rem, 12.5vw, 8em);
   /* Layout */
   --radius: 8px;
@@ -96,9 +96,7 @@ body {
   overflow-x: hidden;
   overflow-wrap: break-word;
 }
-h1,
-h2,
-h3 {
+h1 {
   font-family: var(--font-display);
   margin: 0;
 }
@@ -116,4 +114,14 @@ h3 {
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
+}
+
+.dark {
+  background-color: var(--color-primary-black);
+  color: var(--color-primary-white);
+}
+
+.light {
+  color: var(--color-primary-black);
+  background-color: var(--color-primary-white);
 }
