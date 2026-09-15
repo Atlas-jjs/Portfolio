@@ -30,7 +30,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     column-gap: var(--space-16);
-    padding: var(--space-16) var(--space-12);
+    padding: var(--space-20) var(--space-12);
   }
   .header {
     padding: var(--space-8) var(--space-12);

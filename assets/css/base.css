@@ -70,6 +70,7 @@
   --text-fluid-hero__desktop: clamp(4.5rem, 12.5vw, 18em);
   --text-fluid-page_title: clamp(4rem, 10vw, 12em);
   --text-fluid-cta: clamp(4.5rem, 12.5vw, 8em);
+  --text-fluid-more-projects: clamp(4.5rem, 12.5vw, 8em);
   /* Layout */
   --radius: 8px;
 
