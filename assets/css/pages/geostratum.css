@@ -3,6 +3,7 @@
 }
 
 .main {
+  container-type: inline-size;
   display: flex;
   flex-direction: column;
   gap: var(--space-16);
@@ -25,6 +26,11 @@
     display: block;
     width: 100%;
     object-fit: cover;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    position: relative;
+    z-index: 2;
+    margin-bottom: -28.125cqw;
   }
 
   .page-tags {
@@ -35,6 +41,10 @@
   }
 
   /* * Overview */
+  .overview {
+    margin-top: calc(28.125cqw - var(--space-4));
+  }
+
   .overview__line {
     width: 100px;
     border: 1px solid var(--color-primary-black);
@@ -243,4 +253,3 @@
     gap: var(--space-20);
   }
 }
-
