@@ -13,11 +13,6 @@
 
 /* * 320px */
 @media screen {
-  .header {
-    width: 100%;
-    padding-top: var(--space-4);
-  }
-
   .header,
   .header__nav,
   .header__details {
@@ -151,10 +146,6 @@
 }
 
 @media screen and (min-width: 600px) {
-  .header {
-    padding-top: var(--space-6);
-  }
-
   .header__location,
   #header-clock,
   .header__link {
@@ -187,7 +178,7 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .footer {
     gap: var(--space-28);
   }
