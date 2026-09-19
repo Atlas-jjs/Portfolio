@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <!-- * CSS -->
+    <link rel="stylesheet" href="/assets/css/base.css" />
+    <link rel="stylesheet" href="/assets/css/components.css" />
+    <link rel="stylesheet" href="/assets/css/layouts/projects.css" />
+    <link rel="stylesheet" href="/assets/css/layouts/project-details.css" />
+
+    <style>
+      .header,
+      .hero {
+        background-color: var(--project-aws);
+      }
+
+      .hero__content,
+      .header {
+        color: var(--color-primary-white);
+      }
+
+      .highlight {
+        padding-bottom: 0 !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- * Header -->
+    <header class="header">
+      <div class="header__details">
+        <span class="header__location">BENGUET, PH</span>
+        <span id="header-clock"></span>
+      </div>
+      <nav class="header__nav">
+        <a class="header__link" href="/">Home</a>
+        <a class="header__link" href="/projects">Projects</a>
+        <a class="header__link" href="/automations">Automations</a>
+      </nav>
+    </header>
+    <main class="main">
+      <!-- * Hero  -->
+      <section class="hero content">
+        <div class="hero__content">
+          <div class="hero__heading">
+            <h1 class="heading">AWS Community Day PH ‘26</h1>
+            <div class="page-tags">
+              <div class="tag">Web Development</div>
+              <div class="tag hidden-tag">Voluntary Work</div>
+            </div>
+          </div>
+          <img
+            class="hero__thumbnail"
+            src="/assets/images/thumbnails/aws.png"
+            alt=""
+          />
+        </div>
+      </section>
+      <!-- * Overview  -->
+      <section class="overview">
+        <div class="overview__body">
+          <hr class="overview__line" />
+          <div class="overview__container">
+            <div class="overview__main copy">
+              <h2 class="section__heading">Overview</h2>
+              <p class="overview__description description">
+                AWS Community Day Philippines 2026 is a premier, community-led
+                cloud conference organized by the AWS User Group Philippines
+                that unites developers, cloud architects, and technology
+                enthusiasts. The event focuses entirely on hands-on learning and
+                practical cloud engineering across fields like AI, DevOps,
+                security, and serverless architecture.
+                <br /><br />
+                It serves as a collaborative educational hub where attendees can
+                share actionable insights, develop applied skills, and network
+                with industry peers to tackle real-world challenges.
+              </p>
+
+              <a
+                class="view-site-btn"
+                href="https://community.awsug.ph/2026/manila.html"
+                target="_blank"
+                >VIEW LIVE SITE</a
+              >
+            </div>
+
+            <div class="overview__details">
+              <div class="overview__group">
+                <h3 class="overview__subtitle">Services</h3>
+                <ol class="overview__list">
+                  <li class="overview__list-item">UI/UX Design</li>
+                </ol>
+              </div>
+              <div class="overview__group">
+                <h3 class="overview__subtitle">Personality</h3>
+                <ol class="overview__list">
+                  <li class="overview__list-item">Energetic</li>
+                  <li class="overview__list-item">Grounded</li>
+                  <li class="overview__list-item">Collaborative</li>
+                </ol>
+              </div>
+              <div class="overview__group">
+                <h3 class="overview__subtitle">Typefaces</h3>
+                <ol class="overview__list">
+                  <li class="overview__list-item">Poppins</li>
+                  <li class="overview__list-item">Lora</li>
+                </ol>
+              </div>
+              <div class="overview__group">
+                <h3 class="overview__subtitle">Completed</h3>
+                <ol class="overview__list">
+                  <li class="overview__list-item">Voluntary Work</li>
+                  <li class="overview__list-item">August 2026</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <video
+          class="overview__video"
+          src="/assets/videos/aws-showcase.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+        ></video>
+      </section>
+      <!-- * Highlight -->
+      <section class="highlight content two-columns">
+        <div class="highlight__main copy">
+          <h6 class="highlight__tagline tagline">Visual Evolution</h6>
+          <h2 class="section__heading">Blueprint to Production UI</h2>
+          <p class="highlight__description description">
+            We wireframed the platform to simplify dense event logistics,
+            ensuring attendees could instantly access schedules, speakers, and
+            ticketing. Transitioning to high-fidelity, we wrapped this optimized
+            user journey in a striking, AWS-inspired visual identity built to
+            maximize engagement.
+          </p>
+        </div>
+        <img
+          src="/assets/images/aws/highlight.png"
+          alt=""
+          class="highlight__image"
+        />
+      </section>
+      <!-- * Features -->
+      <section class="features content">
+        <div class="feature right-section two-columns">
+          <div class="feature__thumbnails">
+            <img
+              src="/assets/images/aws/feature-1__low.png"
+              alt=""
+              class="feature__thumbnail"
+            />
+          </div>
+          <div class="feature__main copy">
+            <h6 class="feature__tagline tagline">Spatial Analysis</h6>
+            <h2 class="section__heading">
+              Layer Computations and Custom Imports
+            </h2>
+            <p class="feature__description description">
+              We wireframed the platform to simplify dense event logistics,
+              ensuring attendees could instantly access schedules, speakers, and
+              ticketing. Transitioning to high-fidelity, we wrapped this
+              optimized user journey in a striking, AWS-inspired visual identity
+              built to maximize engagement.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- * More Projects -->
+      <section class="more-projects content dark">
+        <h1 class="more-projects__header" id="title">MORE PROJECTS</h1>
+        <div class="projects">
+          <!-- * Campus Reservation System -->
+          <a class="project" href="/projects/crs">
+            <img
+              class="project__thumbnail"
+              src="/assets/images/thumbnails/crs.png"
+              alt="Campus Reservation System interface preview"
+            />
+            <h2 class="project__title">Campus Reservation System</h2>
+            <div class="project__tags">
+              <div class="tag">
+                <span class="tag__text">Web Development</span>
+              </div>
+              <div class="tag">
+                <span class="tag__text">Database Architecture</span>
+              </div>
+            </div>
+          </a>
+          <!-- * BarangayConnect -->
+          <a class="project" href="/projects/barangayconnect">
+            <img
+              class="project__thumbnail"
+              src="/assets/images/thumbnails/barangayconnect.png"
+              alt="AWS Community Day Philippines 2026 event branding"
+            />
+            <h2 class="project__title">BarangayConnect</h2>
+            <div class="project__tags">
+              <div class="tag">
+                <span class="tag__text">UI/UX Design</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- * Footer -->
+    <footer class="footer content dark">
+      <div class="footer__cta-container">
+        <h2 class="footer__cta">GET IN TOUCH</h2>
+        <button class="footer__cta-btn light">
+          CONTACT ME
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-chevron-right"
+          >
+            <path d="m9 18 6-6-6-6" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="footer__footnotes">
+        <span class="footer__copyright">© 2026 Jazreil Jaron Sabog</span>
+        <div class="footer__links">
+          <a
+            class="footer__link"
+            href="https://www.linkedin.com/in/jjsabog/"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a class="footer__link" href="">Email</a>
+        </div>
+        <div class="footer__back-to-top">
+          <a class="footer__back-to-top-btn" href="#">Back to top</a
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-move-up"
+          >
+            <path d="M8 6L12 2L16 6" />
+            <path d="M12 2V22" />
+          </svg>
+        </div>
+      </div>
+    </footer>
+
+    <!-- * JS -->
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

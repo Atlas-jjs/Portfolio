@@ -57,6 +57,11 @@
     border: 1px solid currentColor;
   }
 
+  .hidden-tag {
+    border: 1px solid var(--color-secondary-white);
+    color: var(--color-secondary-white);
+  }
+
   /* * More Projects */
   .more-projects__header {
     font-size: var(--text-fluid-more-projects);
