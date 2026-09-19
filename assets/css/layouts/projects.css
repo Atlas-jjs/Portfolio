@@ -72,14 +72,17 @@
   .highlight {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    align-items: start;
   }
   .right-section {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    align-items: start;
   }
   .left-section {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    align-items: start;
   }
 
   .copy {

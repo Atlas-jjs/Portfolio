@@ -117,7 +117,44 @@ function initPageReveal() {
       once: true,
       onEnter: (batch) => gsap.to(batch, { ...SHOW, stagger: 0.1 }),
     });
+
+    // 4. Pin .copy text in two-column sections while thumbnails scroll
+    initCopyPin();
+
     ScrollTrigger.refresh();
+  });
+}
+
+/* * ==========================================================================
+   GSAP Copy Pin (sticky text in two-column sections)
+   ========================================================================== */
+
+function initCopyPin() {
+  ScrollTrigger.matchMedia({
+    // Only pin at desktop widths where the two-column grid is active
+    "(min-width: 768px)": function () {
+      document.querySelectorAll(".two-columns").forEach((section) => {
+        const copyEl = section.querySelector(".copy");
+        if (!copyEl) return;
+
+        // The other column (thumbnail / image) that the copy sits beside
+        const siblingEl = [...section.children].find((c) => c !== copyEl);
+        if (!siblingEl) return;
+
+        // Only pin if the thumbnail column overflows the viewport height
+        if (siblingEl.offsetHeight <= window.innerHeight) return;
+
+        ScrollTrigger.create({
+          trigger: section,
+          start: "top 48",
+          // Pin for exactly the height difference so both bottoms align
+          end: () =>
+            `+=${Math.max(0, siblingEl.offsetHeight - copyEl.offsetHeight)}`,
+          pin: copyEl,
+          pinSpacing: false,
+        });
+      });
+    },
   });
 }
 
