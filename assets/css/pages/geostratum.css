@@ -3,13 +3,27 @@
 }
 
 .main {
-  container-type: inline-size;
   display: flex;
   flex-direction: column;
-  gap: var(--space-16);
 }
 
 @media screen {
+  .description {
+    font-size: var(--text-sm);
+  }
+
+  .tagline {
+    color: var(--color-secondary-white);
+    font-size: var(--text-sm);
+    padding-bottom: var(--space-1);
+  }
+
+  .section__heading {
+    font-weight: 800;
+    font-size: var(--text-xl);
+    padding-bottom: var(--space-2);
+  }
+
   /* * HERO */
   .hero {
     background-color: var(--project-gs);
@@ -41,48 +55,28 @@
   }
 
   /* * Overview */
-  .overview {
-    margin-top: calc(28.125cqw - var(--space-4));
-  }
-
   .overview__line {
-    width: 100px;
+    width: 50px;
     border: 1px solid var(--color-primary-black);
-    margin-bottom: var(--space-2);
+    margin-bottom: var(--space-8);
   }
 
   .overview__container {
     display: grid;
     grid-template-columns: 1fr;
-    padding-bottom: var(--space-8);
-  }
-
-  .overview__main {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-6);
-  }
-
-  .overview__heading {
-    font-size: var(--text-2xl);
-    padding-bottom: var(--space-1);
-  }
-
-  .overview__description {
-    font-size: var(--text-base);
-    text-align: justify;
+    padding-bottom: var(--space-20);
   }
 
   .overview__details {
-    width: fit-content;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: max-content;
-    gap: var(--space-4);
+    row-gap: var(--space-8);
   }
 
   .overview__subtitle {
-    font-size: var(--text-base);
+    font-size: var(--text-xl);
     padding-bottom: var(--space-2);
   }
 
@@ -105,50 +99,19 @@
     background-image: url("/assets/images/grid.png");
   }
 
-  .highlight__text {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-3);
-    text-align: justify;
-    margin-bottom: var(--space-8);
-  }
-
   .highlight__image {
     width: 100%;
-  }
-
-  .highlight__heading {
-    font-size: var(--text-4xl);
-  }
-
-  .highlight__description {
-    font-size: var(--text-base);
   }
 
   /* * Features */
   .features {
     display: flex;
     flex-direction: column;
-    gap: var(--space-16);
-  }
-  .feature__heading {
-    font-weight: 800;
-    font-size: var(--text-3xl);
-    padding-bottom: var(--space-2);
+    gap: var(--space-12);
   }
 
   .feature__thumbnail {
     width: 100%;
-    border-radius: var(--space-4);
-  }
-
-  .feature__description {
-    font-size: var(--text-base);
-    text-align: justify;
-  }
-
-  .feature__text {
-    margin-bottom: var(--space-6);
   }
 
   .feature__thumbnails {
@@ -171,7 +134,7 @@
   .project {
     display: flex;
     flex-direction: column;
-    gap: var(--space-2);
+    gap: var(--space-4);
     width: fit-content;
     color: var(--color-primary-white);
     text-decoration: none;
@@ -201,55 +164,55 @@
 }
 
 @media screen and (min-width: 768px) {
-  .projects {
-    grid-template-columns: 1fr 1fr;
+  .features {
+    gap: var(--space-20);
   }
 
+  .description {
+    font-size: var(--text-base);
+  }
+
+  /* * Overview */
   .overview__container {
     grid-template-columns: 2fr 1fr;
     column-gap: var(--space-16);
-  }
-
-  .overview__description {
-    font-size: var(--text-lg);
+    padding-bottom: var(--space-28);
   }
 
   .overview__list-item {
     font-size: var(--text-base);
   }
 
-  .highlight__heading {
-    font-size: var(--text-5xl);
+  .overview__details {
+    text-wrap: nowrap;
+    column-gap: var(--space-8);
   }
 
-  .highlight__description {
-    font-size: var(--text-lg);
+  /* * More Projects */
+  .projects {
+    grid-template-columns: 1fr 1fr;
   }
+}
 
-  .feature__heading {
-    font-size: var(--text-4xl);
-  }
-
-  .feature__description {
-    font-size: var(--text-lg);
-  }
-
-  .feature__text {
-    margin-bottom: 0;
-  }
-
-  .features {
-    gap: var(--space-20);
-  }
-
-  .more-projects {
-    padding-top: var(--space-20);
-    padding-bottom: var(--space-12);
+@media screen and (min-width: 1000px) {
+  .overview__body {
+    padding-inline: var(--space-16);
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .main {
-    gap: var(--space-20);
+  .features {
+    gap: var(--space-32);
+  }
+
+  .section__heading,
+  .overview__subtitle {
+    font-size: var(--text-2xl);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section__heading {
+    font-size: var(--text-3xl);
   }
 }
