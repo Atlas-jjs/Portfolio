@@ -1,3 +1,17 @@
+/* * GSAP related */
+/* * Prevent FOUT / FOUC on GSAP animated headings */
+.hero__heading .heading,
+.hero__heading h1,
+#title.heading {
+  visibility: hidden;
+}
+
+/* * GSAP SplitText characters & words */
+.split-char,
+.split-word {
+  display: inline-block;
+}
+
 /* * Header */
 .header__details,
 .header__link {
