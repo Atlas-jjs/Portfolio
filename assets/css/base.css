@@ -1,3 +1,23 @@
+/* * Page-load reveal: hidden until main.js sets the initial states */
+@media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+  .header,
+  .main,
+  .footer {
+    visibility: hidden;
+    /* Failsafe: if main.js or GSAP never runs, show the page after 4s */
+    animation: reveal-failsafe 1ms 4s forwards;
+  }
+}
+
+@keyframes reveal-failsafe {
+  from {
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+  }
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=block");
 
 @font-face {
