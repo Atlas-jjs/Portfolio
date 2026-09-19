@@ -5,10 +5,34 @@
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 800;
+  position: relative;
+  overflow: hidden;
 }
 
 .header__link:focus-visible {
   display: none;
+}
+
+.header__text {
+  display: block;
+  transition: 0.5s;
+}
+
+.header__link:hover .header__text {
+  transform: translateY(-100%);
+}
+
+.header__link::before {
+  position: absolute;
+  content: attr(data-link-alt);
+  top: 100%;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.header__link:hover:before {
+  top: 0;
+  opacity: 1;
 }
 
 /* * 320px */
