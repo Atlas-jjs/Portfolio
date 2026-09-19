@@ -1,5 +1,25 @@
 @media screen {
-  /* * Overview */
+  .description {
+    font-size: var(--text-sm);
+  }
+
+  .tagline {
+    color: var(--color-secondary-white);
+    font-size: var(--text-sm);
+    padding-bottom: var(--space-1);
+  }
+
+  .section__heading {
+    font-weight: 800;
+    font-size: var(--text-xl);
+    padding-bottom: var(--space-2);
+  }
+
+  /* * General layout */
+  /* * Text Content of each two columns section */
+  .copy {
+    margin-bottom: var(--space-16);
+  }
   .overview {
     margin-top: calc(28.125cqw - var(--space-12));
     padding: var(--space-16) var(--space-4);
@@ -14,13 +34,10 @@
     display: flex;
     flex-direction: column-reverse;
   }
-  /* * Text Content of each two columns section */
-  .copy {
-    margin-bottom: var(--space-16);
-  }
 }
 
 @media screen and (min-width: 600px) {
+  /* * General layout */
   .overview {
     padding-inline: var(--space-8);
   }
@@ -33,6 +50,11 @@
 }
 
 @media screen and (min-width: 768px) {
+  .description {
+    font-size: var(--text-base);
+  }
+
+  /* * General layout */
   .overview {
     padding-inline: var(--space-12);
   }
@@ -51,7 +73,6 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
-
   .right-section {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -67,17 +88,27 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .section__heading {
+    font-size: var(--text-2xl);
+  }
+
+  /* * General layout */
   .two-columns {
     column-gap: var(--space-32);
   }
   .overview {
     padding-inline: var(--space-16);
-    margin-top: calc(28.125cqw - var(--space-12));
   }
   .header {
     padding: var(--space-8) var(--space-16);
   }
   .content {
     padding: var(--space-20) var(--space-16);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section__heading {
+    font-size: var(--text-3xl);
   }
 }

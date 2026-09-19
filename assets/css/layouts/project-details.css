@@ -1,34 +1,10 @@
-.header {
-  background-color: var(--project-gs);
-}
-
 .main {
   display: flex;
   flex-direction: column;
 }
 
 @media screen {
-  .description {
-    font-size: var(--text-sm);
-  }
-
-  .tagline {
-    color: var(--color-secondary-white);
-    font-size: var(--text-sm);
-    padding-bottom: var(--space-1);
-  }
-
-  .section__heading {
-    font-weight: 800;
-    font-size: var(--text-xl);
-    padding-bottom: var(--space-2);
-  }
-
   /* * HERO */
-  .hero {
-    background-color: var(--project-gs);
-  }
-
   .hero__heading {
     display: flex;
     flex-direction: column;
@@ -160,18 +136,7 @@
   }
 }
 
-@media screen and (min-width: 600px) {
-}
-
 @media screen and (min-width: 768px) {
-  .features {
-    gap: var(--space-20);
-  }
-
-  .description {
-    font-size: var(--text-base);
-  }
-
   /* * Overview */
   .overview__container {
     grid-template-columns: 2fr 1fr;
@@ -188,6 +153,11 @@
     column-gap: var(--space-8);
   }
 
+  /* * Features */
+  .features {
+    gap: var(--space-20);
+  }
+
   /* * More Projects */
   .projects {
     grid-template-columns: 1fr 1fr;
@@ -195,24 +165,19 @@
 }
 
 @media screen and (min-width: 1000px) {
+  /* * Overview */
   .overview__body {
     padding-inline: var(--space-16);
   }
 }
 
 @media screen and (min-width: 1200px) {
+  /* * Features */
   .features {
     gap: var(--space-32);
   }
 
-  .section__heading,
   .overview__subtitle {
     font-size: var(--text-2xl);
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .section__heading {
-    font-size: var(--text-3xl);
   }
 }
