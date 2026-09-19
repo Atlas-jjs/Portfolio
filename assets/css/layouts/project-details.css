@@ -68,6 +68,10 @@
     width: 100%;
   }
 
+  .overview__thumbnail {
+    width: 100%;
+  }
+
   /* * Highlight*/
   .highlight {
     color: var(--color-primary-white);
