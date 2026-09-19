@@ -90,7 +90,7 @@ function initPageReveal() {
     ".highlight__image",
     ".feature__thumbnail",
     ".more-projects__header",
-    ".project",
+    ".more-projects .project",
     ".footer__cta-container",
     ".footer__footnotes",
     '[data-reveal="scroll"]',
